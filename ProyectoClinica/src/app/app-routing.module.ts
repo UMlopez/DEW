@@ -7,6 +7,7 @@ import { LoginComponent } from "./pages/login/login.component";
 import { ProgramarCitaComponent } from "./pages/programar-cita/programar-cita.component";
 import { UsuariosComponent } from "./pages/usuarios/usuarios.component";
 import { PresupuestoComponent } from "./pages/presupuesto/presupuesto.component";
+import { HistorialatencionComponent } from "./pages/historialatencion/historialatencion.component";
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent},
     { path: 'usuario', component: UsuariosComponent},
      { path: 'presupuesto', component: PresupuestoComponent},
+  {path:'historial',component:HistorialatencionComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
 ];
 
