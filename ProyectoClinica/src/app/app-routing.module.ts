@@ -6,6 +6,7 @@ import { HomeComponent } from "./pages/home/home.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { ProgramarCitaComponent } from "./pages/programar-cita/programar-cita.component";
 import { UsuariosComponent } from "./pages/usuarios/usuarios.component";
+import { PresupuestoComponent } from "./pages/presupuesto/presupuesto.component";
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'citas-reservadas', component: CitasReservadasComponent},
     { path: 'login', component: LoginComponent},
     { path: 'usuario', component: UsuariosComponent},
+     { path: 'presupuesto', component: PresupuestoComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
 ];
 
