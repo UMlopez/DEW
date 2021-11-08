@@ -8,6 +8,7 @@ import { ProgramarCitaComponent } from './pages/programar-cita/programar-cita.co
 import { CitasReservadasComponent } from './pages/citas-reservadas/citas-reservadas.component';
 import { LoginComponent } from './pages/login/login.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { ComprobantesComponent } from './pages/comprobantes/comprobantes.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
     CitasReservadasComponent,
     LoginComponent,
     UsuariosComponent,
+    ComprobantesComponent,
     
   ],
   imports: [
