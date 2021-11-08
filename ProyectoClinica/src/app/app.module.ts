@@ -9,6 +9,7 @@ import { CitasReservadasComponent } from './pages/citas-reservadas/citas-reserva
 import { LoginComponent } from './pages/login/login.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { ComprobantesComponent } from './pages/comprobantes/comprobantes.component';
+import { PresupuestoComponent } from './pages/presupuesto/presupuesto.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ComprobantesComponent } from './pages/comprobantes/comprobantes.compone
     HomeComponent,
     ProgramarCitaComponent,
     CitasReservadasComponent,
+    PresupuestoComponent,
     LoginComponent,
     UsuariosComponent,
     ComprobantesComponent,
