@@ -8,6 +8,7 @@ import { ProgramarCitaComponent } from "./pages/programar-cita/programar-cita.co
 import { UsuariosComponent } from "./pages/usuarios/usuarios.component";
 import { PresupuestoComponent } from "./pages/presupuesto/presupuesto.component";
 import { HistorialatencionComponent } from "./pages/historialatencion/historialatencion.component";
+import { ComprobantesComponent } from "./pages/comprobantes/comprobantes.component";
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent},
@@ -15,8 +16,9 @@ const routes: Routes = [
     { path: 'citas-reservadas', component: CitasReservadasComponent},
     { path: 'login', component: LoginComponent},
     { path: 'usuario', component: UsuariosComponent},
-     { path: 'presupuesto', component: PresupuestoComponent},
-  {path:'historial',component:HistorialatencionComponent},
+    { path: 'presupuesto', component: PresupuestoComponent},
+    { path: 'historial',component:HistorialatencionComponent},
+    { path: 'comprobante',component:ComprobantesComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
 ];
 
