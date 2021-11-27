@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { RecaptchaErrorParameters } from 'ng-recaptcha';
 
 @Component({
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
    public onError(errorDetails: RecaptchaErrorParameters) : void {
      console.log('Ocurrio un error : ${errordetails}')
    }
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }

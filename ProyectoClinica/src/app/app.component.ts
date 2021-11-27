@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   template: `<re-captcha
 (resolved)="resolved($event)"
-siteKey=""
+siteKey="6LdD_mEdAAAAAEzsoACvtMLCiCF9XyqxOpmQmkEk"
 ></re-captcha>`,
 
   styleUrls: ['./app.component.css']
