@@ -43,6 +43,17 @@
                     <input type="password" class="form-control " name="nombre" id="nombre" placeholder=""
                         aria-describedby="ayuda-nombre">
                     <!--<small id="ayuda-nombre" class="form-text text-muted">Ingrese su CONTRASEÑA</small>-->
+                      <div>
+                        <re-captcha
+                        (resolved)="resolved($event)"
+                        (error)="onError($event)"
+                        errorMode="handled"
+                        siteKey=""
+                        > 
+                        </re-captcha>
+                    </div>  
+
+
                 </div>
                 <p><a href="#">Nuevo usuario</a></p>
                 <p><a href="#">¿Olvideo la contraseña?</a></p>
