@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { ComprobantesComponent } from './pages/comprobantes/comprobantes.component';
 import { PresupuestoComponent } from './pages/presupuesto/presupuesto.component';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ import { PresupuestoComponent } from './pages/presupuesto/presupuesto.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RecaptchaModule,
+    RecaptchaFormsModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
