@@ -11,10 +11,10 @@ import { HistorialatencionComponent } from "./pages/historialatencion/historiala
 import { ComprobantesComponent } from "./pages/comprobantes/comprobantes.component";
 
 const routes: Routes = [
+    { path: 'login', component: LoginComponent},
     { path: 'home', component: HomeComponent},
     { path: 'programar-cita', component: ProgramarCitaComponent},
-    { path: 'citas-reservadas', component: CitasReservadasComponent},
-    { path: 'login', component: LoginComponent},
+    { path: 'citas-reservadas', component: CitasReservadasComponent},    
     { path: 'usuario', component: UsuariosComponent},
     { path: 'presupuesto', component: PresupuestoComponent},
     { path: 'historial',component:HistorialatencionComponent},
