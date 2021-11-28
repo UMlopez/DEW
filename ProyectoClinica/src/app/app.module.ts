@@ -10,7 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { ComprobantesComponent } from './pages/comprobantes/comprobantes.component';
 import { PresupuestoComponent } from './pages/presupuesto/presupuesto.component';
-import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+//import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 
 @NgModule({
