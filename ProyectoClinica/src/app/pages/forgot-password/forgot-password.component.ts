@@ -38,7 +38,7 @@ export class ForgotPasswordComponent implements OnInit {
       this.cambiarContraseña(this.forgotPasswordForm.value);
 
     } else {
-      alert("Formulario no válido");
+      alert("Es necesario ingresar todos los datos");
     }
 
   }

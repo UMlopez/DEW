@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
         this.login(this.loginForm.value);
 
       } else {
-        alert("Formulario no válido");
+        alert("Datos invalidos");
       }
     }
     else {
