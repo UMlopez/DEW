@@ -1,0 +1,60 @@
+<div class="modal-header">
+  <!-- <h4 class="modal-title">{{my_modal_title}}</h4> -->
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <!-- <p> {{my_modal_content}}</p> -->
+  <form [formGroup]= "pagoForm" class="border rounded bg-light p-3 mt-3" autocomplete="off">
+    <div class="form">
+      <div class="default-view active">
+        <div style="text-align: center;">
+              <label class="label" style="text-align: center;"><strong>Recuerda</strong> activar las 
+                <strong>compras por
+                  internet</strong><br>con tu banco</label>
+        </div>
+        <div class="fonticons">
+          <input formControlName="NroTarjeta" class="card" type="text" placeholder="Número de Tarjeta" required> 
+          <i class="fa fa-credit-card fa-lg"></i>
+        </div>
+        <div class="row" style="margin-left: 0px;">
+          <div class="fonticons" style="width: 48%;">
+            <input formControlName="FechaVcto" type="text" class="cvv" placeholder="MM/AA" required> 
+            <i class="fa fa-calendar fa-lg"></i>
+          </div>
+          &nbsp;
+          <div class="fonticons" style="width: 48%;">
+            <input formControlName="CodigoCVV" type="text" placeholder="CVV" required> 
+            <i class="fa fa-credit-card-alt fa-lg"></i>
+          </div>
+        </div>
+        <div class="row" style="margin-left: 0px;">
+          <div class="fonticons" style="width: 48%;">
+            <input formControlName="Nombre" type="text" placeholder="Nombre" required> 
+            <i class="fa fa-user-o fa-lg"></i>
+          </div>
+          &nbsp;
+          <div class="fonticons" style="width: 48%;">
+            <input formControlName="Apellido" type="text" placeholder="Apellido" required> 
+            <i class="fa fa-user-o fa-lg"></i>
+          </div>
+        </div>
+        <div class="fonticons">
+          <input formControlName="Email" type="text" placeholder="Email" required> 
+          <i class="fa fa-envelope-o fa-lg"></i>
+        </div>
+      </div>
+      <div class="form-groupnoborder btn-holder"> 
+        <button (click)= "onSubmit()" class="btn btn-submit btn-success btn-pagar" type="submit">Pagar S/ 100.00</button> 
+      </div>
+      <div class="row" style="width: 95%; margin: auto;"> 
+        <img style="width: 125px; height:100px;" src="assets/images/pci.svg">
+        <img style="width: 72px; height:59px; margin: 0px 5px 0px 5px;" src="assets/images/visa.png">
+        <img style="width: 60px; height:40px; margin: 0px 5px 0px 5px;" src="assets/images/mastercard.png">
+        <img style="width: 60px; height:40px; margin: 0px 5px 0px 5px;" src="assets/images/diners-club.png">
+        <img style="width: 60px; height:40px;" src="assets/images/american-express.png">
+      </div>      
+    </div>
+  </form>
+</div>

@@ -1,6 +1,5 @@
 $(function () {
 
-
     /*-----------------------------------------------------------
     1. FUNCIONES PARA EL MENU PRINCIPAL
     -------------------------------------------------------------*/
@@ -127,7 +126,7 @@ $(function () {
              6. INICIANDO "stickit.js"
      -------------------------------------------------------------*/
     $('#menu-navegacion').stickit({
-        className:'menu-fijo'        
+        scope: StickScope.Document, top: 0
     });
 
     /*-----------------------------------------------------------
@@ -139,6 +138,48 @@ $(function () {
         highlightClass:'active'
     });
 
+    $('.card').numbermask({
+        mask: "####-####-####-####"
+    });
 
+    $('.cvc').numbermask({
+        mask: "###"
+    });
+});
 
-})
+function seleccionHorarioDias(element){
+    $("label[name=lblHorariosDias]").each(function(i, o){
+        if(o.id != element.id){
+            $(this).removeClass("active");
+        }
+    });
+
+    var FeHorario = element.id.replace("lblHorarioDia_", "");
+
+    if(!$(element).hasClass("active")){
+        $("#dvHorarioDiaSlc").val(FeHorario);
+    }else{
+        $("#dvHorarioHoraSlc").val("0");
+    }
+    
+}
+
+function seleccionHorarioHoras(element){
+    $("label[name=lblHorariosHoras]").each(function(i, o){
+        if(o.id != element.id){
+            $(this).removeClass("active");
+        }
+    });
+
+    var CoHorario = element.id.replace("lblHorarioHora_", "");
+
+    if(!$(element).hasClass("active")){
+        $("#dvHorarioHoraSlc").val(CoHorario);
+    }else{
+        $("#dvHorarioHoraSlc").val("0");
+    }
+}
+
+function abrirpdf(archivo){
+    window.open("assets/docs/" + archivo + ".pdf");
+}

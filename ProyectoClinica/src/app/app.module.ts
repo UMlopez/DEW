@@ -1,32 +1,43 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProgramarCitaComponent } from './pages/programar-cita/programar-cita.component';
-import { CitasReservadasComponent } from './pages/citas-reservadas/citas-reservadas.component';
+import { AppComponent } from './app.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { HomeComponent } from './home/home/home.component';
+import { ContactusComponent } from './pages/contactus/contactus.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
-import { UsuariosComponent } from './pages/usuarios/usuarios.component';
-import { ComprobantesComponent } from './pages/comprobantes/comprobantes.component';
-import { PresupuestoComponent } from './pages/presupuesto/presupuesto.component';
-
+import { RegisterComponent } from './pages/register/register.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { ProgramarComponent } from './pages/programar/programar.component';
+import { MisCitasComponent } from './pages/mis-citas/mis-citas.component';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
+import { HttpClientModule } from '@angular/common/http';
+import { LogoutComponent } from './pages/login/logout.component';
+import { ModalPagoComponent } from './pages/modal-pago/modal-pago.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AboutusComponent,
+    ContactusComponent,
     HomeComponent,
-    ProgramarCitaComponent,
-    CitasReservadasComponent,
-    PresupuestoComponent,
     LoginComponent,
-    UsuariosComponent,
-    ComprobantesComponent,
-    
+    LogoutComponent,
+    RegisterComponent,
+    ForgotPasswordComponent,
+    ProgramarComponent,
+    MisCitasComponent,
+    ModalPagoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

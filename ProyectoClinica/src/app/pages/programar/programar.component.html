@@ -1,0 +1,101 @@
+<section id="nuestra-app" class="bg-secondary py-5 text-white text-center jarallax" data-jarallax data-speed="0.6">
+    <picture class="jarallax-img">
+        <source media="(min-width:1200px)" srcset="assets/images/fondo-descargar-app-xl.jpg">
+        <source media="(min-width:768px)" srcset="assets/images/fondo-descargar-app-md.jpg">
+        <img srcset="images/fondo-descargar-app.jpg" alt="Fondo Nuestra App" class="w-100">
+    </picture>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h2 class="display-4 font-weight-bold">AGENDAMIENTO VIRTUAL</h2>
+                <p>RESERVAR CITA</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion #premios -->
+<section id="premios" class="py-5 text-center">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <form [formGroup]= "programarForm" method="post" class="border rounded bg-light p-3 mt-3">
+                    <div class="form-group text-left">
+                        <label class="font-size-h6 font-weight-bolder">Especialidad</label>
+                        <select #cboEspecialidad class="form-control form-control-lg form-control-solid rounded-lg 
+                            font-size-h6 sin-bordes" (change)='onEspecialidadSelected(cboEspecialidad.value)'>
+                            <option value="0"> Seleccione </option>
+                            <option *ngFor="let e of especialidades" value="{{ e.coEspecialidad }}">
+                                {{ e.noEspecialidad }}
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group text-left">
+                        <label class="font-size-h6 font-weight-bolder">Profesional de Salud</label>
+                        <select #cboMedico class="form-control form-control-lg form-control-solid rounded-lg 
+                            font-size-h6 sin-bordes" formControlName="coColegiatura" (change)='onMedicoSelected(cboMedico.value)'>
+                            <option value="0"> Seleccione </option>
+                            <option *ngFor="let m of medicos" value="{{ m.coColegiatura }}">
+                                {{ m.noNombre + " " + m.noApellido }}
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group text-left">
+                        <label class="font-size-h6 font-weight-bolder">Fecha de Cita</label>
+                        <div class="table-responsive">
+                            <table class="table table-head-custom table-borderless table-vertical-center">
+                                <thead style="display: none;"><tr class="text-left text-uppercase"><th></th><th></th><th></th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pr-0 text-center">
+                                            <input #iptDia type="hidden" value="0" id="dvHorarioDiaSlc" />
+                                            <div data-toggle="buttons" class="row btn-group-toggle" style="margin-right: 0px !important; margin-left: 0px !important;">
+                                                <div *ngFor="let d of dias" class="col-md-4 col-sm-6 col-xs-6 mb-4 ng-star-inserted pointer">
+                                                    <label id="lblHorarioDia_{{ d.feHorario }}" (click)="onDiaSelected(cboMedico.value, d.feHorario)" name="lblHorariosDias" onclick="javascript: seleccionHorarioDias(this)" class="btn btn-outline-primary font-weight-bolder font-size-sm" style="display: block;">
+                                                         {{ d.feHorario }}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                        <label class="font-size-h6 font-weight-bolder">Hora de Cita</label>
+                        <div class="table-responsive">
+                            <table class="table table-head-custom table-borderless table-vertical-center">
+                                <thead style="display: none;"><tr class="text-left text-uppercase"><th></th><th></th><th></th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pr-0 text-center">
+                                            <input #iptHora type="hidden" value="0" id="dvHorarioHoraSlc" class="form-control" formControlName="coHorario" />
+                                            <div data-toggle="buttons" class="row btn-group-toggle" style="margin-right: 0px !important; margin-left: 0px !important;">
+                                                <div *ngFor="let h of horas" class="col-md-4 col-sm-6 col-xs-6 mb-4 ng-star-inserted pointer">
+                                                    <label id="lblHorarioHora_{{ h.coHorario }}" name="lblHorariosHoras" onclick="javascript: seleccionHorarioHoras(this)" class="btn btn-outline-primary font-weight-bolder font-size-sm" style="display: block;">
+                                                         {{ h.feHoraInicio }}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button (click)= "onSubmit(cboMedico.value, iptHora.value)" type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>

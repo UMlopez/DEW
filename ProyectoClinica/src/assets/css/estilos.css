@@ -470,3 +470,7 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
     /*700px*/ } }
 
 /*# sourceMappingURL=estilos.css.map */
+
+.sin-bordes{
+  border: 0;
+}

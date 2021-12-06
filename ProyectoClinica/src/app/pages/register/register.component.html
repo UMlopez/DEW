@@ -1,0 +1,80 @@
+<!-- Sección #te-ayudamos -->
+<section id="nuestra-app" class="bg-secondary py-5 text-white text-center jarallax" data-jarallax data-speed="0.6">
+    <picture class="jarallax-img">
+        <source media="(min-width:1200px)" srcset="assets/images/fondo-descargar-app-xl.jpg">
+        <source media="(min-width:768px)" srcset="assets/images/fondo-descargar-app-md.jpg">
+        <img srcset="assets/images/fondo-descargar-app.jpg" alt="Fondo Nuestra App" class="w-100">
+    </picture>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h2 class="display-4 font-weight-bold">NUEVO USUARIO</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion #premios -->
+<section id="premios" class="py-5 text-center">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <form [formGroup]="registerForm" method="post" class="border rounded bg-light p-3 mt-3">
+                    <!--<h2 class="text-center">Ingrese el nombre de usuario asociado a su cuenta.</h2>-->
+
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su Correo:</label>
+                        <input class="form-control" type="text" formControlName="TxCorreo" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su DNI:</label>
+                        <input class="form-control" type="text" formControlName="DocumentoIdentidad" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su contraseña:</label>
+                        <input class="form-control" type="password" formControlName="PasswordUsuario" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Confirme su contraseña:</label>
+                        <input class="form-control" type="password" formControlName="ConfirmPasswordUsuario" autocomplete="off" >
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su Nombre:</label>
+                        <input class="form-control" type="text" formControlName="Nombres" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su Apellido Paterno:</label>
+                        <input class="form-control" type="text" formControlName="ApellidoPaterno" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su Apellido Materno:</label>
+                        <input class="form-control" type="text" formControlName="ApellidoMaterno" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Ingrese su Número de Teléfono:</label>
+                        <input class="form-control" type="text" formControlName="NuTelefono" autocomplete="off" />
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="nombre">Seleccione el Perfil:</label>
+                        <select class="form-control form-control-sm" formControlName="IdPerfil" style="color: rgb(0, 0, 0);">
+                            <option value="1" style="color: rgb(119, 119, 119);">Administrador</option>
+                            <option value="2" style="color: rgb(119, 119, 119);">Paciente</option>
+                        </select>
+                    </div>
+
+                    <br />
+
+                    <p><a href="#" routerLink="/login">Volver al Login</a></p>
+                    <p><a href="#" routerLink="/forgot">¿Olvidó la contraseña?</a></p>
+
+                    <div class="form-group">
+                        <button (click)= "onSubmit()" class="btn btn-primary" type="submit" style="background-color: #ffa555;font-weight: normal;">Registrar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,29 +1,30 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { CitasReservadasComponent } from "./pages/citas-reservadas/citas-reservadas.component";
-
-import { HomeComponent } from "./pages/home/home.component";
-import { LoginComponent } from "./pages/login/login.component";
-import { ProgramarCitaComponent } from "./pages/programar-cita/programar-cita.component";
-import { UsuariosComponent } from "./pages/usuarios/usuarios.component";
-import { PresupuestoComponent } from "./pages/presupuesto/presupuesto.component";
-import { HistorialatencionComponent } from "./pages/historialatencion/historialatencion.component";
-import { ComprobantesComponent } from "./pages/comprobantes/comprobantes.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home/home.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { ContactusComponent } from './pages/contactus/contactus.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { LoginComponent } from './pages/login/login.component';
+import { LogoutComponent } from './pages/login/logout.component';
+import { MisCitasComponent } from './pages/mis-citas/mis-citas.component';
+import { ProgramarComponent } from './pages/programar/programar.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent},
-    { path: 'programar-cita', component: ProgramarCitaComponent},
-    { path: 'citas-reservadas', component: CitasReservadasComponent},
-    { path: 'login', component: LoginComponent},
-    { path: 'usuario', component: UsuariosComponent},
-    { path: 'presupuesto', component: PresupuestoComponent},
-    { path: 'historial',component:HistorialatencionComponent},
-    { path: 'comprobante',component:ComprobantesComponent},
-    { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'logout', component: LogoutComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'forgot', component: ForgotPasswordComponent },
+  { path: 'programar/:id', component: ProgramarComponent },
+  { path: 'citas', component: MisCitasComponent }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

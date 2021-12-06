@@ -1,337 +1,147 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  <title>Clinica Tezza – Cuidamos al enfermo como una madre cuida a su único hijo enfermo.</title>
   <meta charset="utf-8">
-  <title>Clinica Tezza</title>
-
-  <!--¡En buena hora!  He probado las rutas de los HTML y todo esta conforme. Buen trabajo compañeros. ¡Vamos por más!-->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
   <base href="/">
-     <!--<title>Clinica Tezza – Cuidamos al enfermo como una madre cuida a su único hijo enfermo.</title>
-    <meta charset="utf-8">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+  <!-- Carga del CSS de "Bootstrap" -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
-    <!-- Carga del CSS de "Bootstrap" -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+  <!-- Carga del CSS de "Font Awesome" -->
+  <link rel="stylesheet" href="/assets/css/all.css">
 
-    <!-- Carga del CSS de "Font Awesome" -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/all.css">
+  <!-- Carga del CSS de "Swiper" -->
+  <link rel="stylesheet" href="/assets/css/swiper.min.css">
 
-    <!-- Carga del CSS de "Swiper" -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/swiper.min.css">
+  <!-- Carga del CSS de "VenoBox" -->
+  <link rel="stylesheet" href="/assets/css/venobox.css">
 
-    <!-- Carga del CSS de "VenoBox" -->
-    <link rel="stylesheet"type="text/css" href="/assets/css/venobox.css">
+  <!-- Carga del CSS de "Jarallax" -->
+  <link rel="stylesheet" href="/assets/css/jarallax.css">
 
-    <!-- Carga del CSS de "Jarallax" -->
-    <link rel="stylesheet" type="text/css"href="/assets/css/jarallax.css">
+  <!-- Carga del CSS de "Pickadate.js" -->
+  <link rel="stylesheet" href="/assets/pickadate.js/themes/default.css">
 
-    <!-- Carga del CSS de "Pickadate.js" -->
-    <link rel="stylesheet" type="text/css"href="/assets/js/pickadate.js/themes/default.css">
+  <!-- Carga del CSS de "Date Picker" -->
+  <link rel="stylesheet" href="/assets/pickadate.js/themes/default.date.css">
 
+  <!-- Carga del CSS de "Time Picker" -->
+  <link rel="stylesheet" href="/assets/pickadate.js/themes/default.time.css">
 
-    <!-- Carga del CSS de "Date Picker" -->
-    <link rel="stylesheet"type="text/css" href="/assets/js/pickadate.js/themes/default.date.css">
+  <!-- Carga de Fuentes de google-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
-    <!-- Carga del CSS de "Time Picker" -->
-    <link rel="stylesheet" type="text/css"href="/assets/js/pickadate.js/themes/default.time.css">
+  <!-- Carga del CSS de "Jarallax" -->
+  <link rel="stylesheet" href="/assets/css/jarallax.css">
 
-<!-- Carga de Fuentes de google-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <!-- Carga del CSS personalizado -->
+  <link rel="stylesheet" href="/assets/css/estilos.css">
 
+  <!-- Carga del CSS personalizado -->
+  <link rel="stylesheet" href="/assets/css/credit.css">
 
-    <!-- Carga del CSS personalizado -->
-    <link rel="stylesheet" href="/assets/css/estilos.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-      <!-- Seccion #barra-contacto -->
-      <section id="barra-contacto" class="bg-primary text-white py-3 py-lg-1 text-center">
-        <div class="container">
-            <div class="row justify-content-sm-between align-items-sm-center">
-                <div class="col-12 col-sm-auto">
-                    <i class="fas fa-map-marker-alt mr-1"></i><span>Jr. El Polo 570 Surco, Lima, Perú</span>
-                </div>
-
-                <div class="col-12 col-sm-auto">
-                    <ul class="redes-sociales list-unstyled d-inline-flex mb-0">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <!--<li><a href="#"><i class="fab fa-google-plus"></i></a></li>-->
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección #detalles-encabezado -->
-    <section id="detalles-encabezado" class="d-none d-md-block py-3">
-        <div class="container">
-            <div class="row justify-content-md-between align-items-md-center">
-                <div class="col-auto">
-                    <a href="#" class="logo">
-                        <img src="/assets/images/logo-clinica-tezza.png" alt="Logo del sitio" width="200" class="img-fluid">
-                    </a>
-                </div>
-
-                <div class="col-auto ml-md-auto">
-                    <i class="fas fa-phone fa-flip-horizontal fa-2x align-middle text-primary"></i>
-                    <span class="font-weight-bold h5 ml-2">(511)6105050</span>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-envelope fa-2x align-middle text-primary"></i>
-                    <span class="font-weight-bold h5 ml-2">info@clinicatezza.com.pe</span>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Sección #menu-navegacion -->
-
-    <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
-        <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
-                aria-expanded="false" aria-label="Botón Menú principal">
-                <span class="boton-menu"></span>
-            </button>
-            <a href="#" class="btn btn-primary order-md-1">Reservar una cita</a>
-
-            <div class="collapse navbar-collapse" id="menu-principal">
-                <ul class="navbar-nav mt-3 mt-md-0">
-                    <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#barra-contacto"
-                            class="nav-link active">Inicio</a></li>
-                    <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#bienvenidos" class="nav-link">Especialidades</a></li>
-                    <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#premios" class="nav-link">Staff Médico</a></li>
-                    <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#nuestra-app" class="nav-link">La Clínica</a>
-                    </li>
-                    <li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="#contacto" class="nav-link">Contáctenos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
+  <!-- Carga del CSS Whatsapp -->
+  <link rel="stylesheet" href="/assets/css/styleWhatsapp.css">
 </head>
+
 <body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=988883494&text=%C2%A1Hola!%20Bienvenidos%20a%20Cl%C3%ADnica%20Tezza"
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <!-- Seccion #barra-contacto -->
+  <section id="barra-contacto" class="bg-primary text-white py-3 py-lg-1 text-center">
+    <div class="container">
+      <div class="row justify-content-sm-between align-items-sm-center">
+        <div class="col-12 col-sm-auto">
+          <i class="fas fa-map-marker-alt mr-1"></i><span>Jr. El Polo 570 Surco, Lima, Perú</span>
+        </div>
+
+        <div class="col-12 col-sm-auto">
+          <ul class="redes-sociales list-unstyled d-inline-flex mb-0">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección #detalles-encabezado -->
+  <section id="detalles-encabezado" class="d-none d-md-block py-3">
+    <div class="container">
+      <div class="row justify-content-md-between align-items-md-center">
+        <div class="col-auto">
+          <a href="#" class="logo">
+            <img src="assets/images/logo-clinica-tezza.png" alt="Logo del sitio" width="200" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-auto ml-md-auto">
+          <i class="fas fa-phone fa-flip-horizontal fa-2x align-middle text-primary"></i>
+          <span class="font-weight-bold h5 ml-2">(511)6105050</span>
+        </div>
+        <div class="col-auto">
+          <i class="fas fa-envelope fa-2x align-middle text-primary"></i>
+          <span class="font-weight-bold h5 ml-2">info@clinicatezza.com.pe</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <app-root></app-root>
 
-  
+  <!-- Sección #pie-de-pagina -->
+  <footer id="pie-de-pagina" class="bg-dark  text-light text-truncate">
+    <div class="container">
+      <div class="row align-items-center">
 
-  <!-- Sección #nuestra-app -->
-  <section id="nuestra-app" class="bg-secondary py-5 text-white text-center text-md-left jarallax" data-jarallax
-  data-speed="0.6">
-  <picture class="jarallax-img">
-      <source media="(min-width:1200px)" srcset="/assets/images/fondo-descargar-app-xl.jpg">
-      <source media="(min-width:768px)" srcset="/assets/images/fondo-descargar-app-md.jpg">
-      <img srcset="/assets/images/fondo-descargar-app.jpg" alt="Fondo Nuestra App" class="w-100">
-  </picture>
+        <div class="columna-inclinada col-12 col-md-6 col-xl-5 py-2">
+          <div class="row">
 
-  <div class="container">
-      <div class="row justify-content-md-end">
-          <div class="col-12 col-md-6">
-              <h2 class="h1 font-weight-bold">DESCARGA NUESTRA APP Y ACCEDE A DESCUENTOS EXCLUSIVOS!</h2>
-              <h6 class="text-white-50">SOMOS PARTE DE TÍ</h6>
-              <p>Hemos creado una aplicación exclusiva para nuestros clientes. Desde donde podrás acceder a
-                  sorteos y descuentos especiales.</p>
-              <a href="#" class="btn btn-primary mt-3">Conócenos más</a>
+            <div class="col-12">
+              <h2 class="text-white font-weight-bold h1">Soporte</h2>
+            </div>
 
+            <div class="col-auto text-black-50 ">
+              <i class="fas fa-briefcase-medical fa-4x"></i>
+            </div>
+
+            <div class="col-auto  text-black-50 pl-0">
+              <h3>(511) 388-7813</h3>
+              <p>Servicio de ayuda esta disponible 24h/7.</p>
+
+            </div>
           </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-7 py-2 text-center text-md-right small">
+          <ul class="enlaces-secundario list-unstyled d-inline-flex text-uppercase ">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#" onclick="javascript:abrirpdf('POLITICAS_DE_PRIVACIDAD');">Políticas de Privacidad</a></li>
+            <li><a href="#" onclick="javascript:abrirpdf('TERMINOS_Y_CONDICIONES');">Términos y
+                Condiciones</a></li>
+            <li><a href="" onclick="window.open('https://reclamos.servicios.gob.pe/')">Libros de
+                Reclamaciones</a>
+            </li>
+          </ul>
+          <p>©2021. Todos los derechos reservados.</p>
+        </div>
+
       </div>
-  </div>
-</section>
-
-
-   <!-- Sección #contacto -->
-   <section id="contacto">
-    <header class="py-5 bg-primary text-white text-center position-relative">
-        <h2 class="display-4 font-weight-bold">CONTÁCTANOS</h2>
-        <h6 class="text-white-50">ESTAMOS LISTOS PARA ATENDERTE</h6>
-        <div class="detalle-rectangulo"></div>
-    </header>
-
-    <div class="container">
-        <div class="row py-5">
-
-            <div class="col-12 col-lg-6">
-                <h2 class="font-weight-bold text-center mb-2">Detalles de contacto:</h2>
-
-                <ul class="list-unstyled">
-
-                    <li class="d-flex border-bottom py-4">
-                        <i class="fas fa-globe fa-3x text-primary mr-4 fa-fw"></i>
-                        <div>
-                            <h5 class="font-weight-bold">Dirección:</h5>
-                            <p class="mb-0">Jr. El Polo 570 Surco, Lima, Perú</p>
-                        </div>
-                    </li>
-
-                    <li class="d-flex border-bottom py-4">
-                        <i class="fas fa-mobile-alt fa-3x text-warning mr-4 fa-fw"></i>
-                        <div>
-                            <h5 class="font-weight-bold">Teléfonos:</h5>
-                            <p class="mb-0">(511)6105050</p>
-                        </div>
-                    </li>
-                    <li class="d-flex border-bottom py-4">
-                        <i class="fas fa-envelope-open fa-3x text-danger mr-4 fa-fw"></i>
-                        <div>
-                            <h5 class="font-weight-bold">Email:</h5>
-                            <p class="mb-0">info@clinicatezza.com.pe</p>
-                        </div>
-                    </li>
-                    <!--<li class="d-flex border-bottom py-4">
-                        <i class="fab fa-skype fa-3x text-info mr-4 fa-fw"></i>
-                        <div>
-                            <h5 class="font-weight-bold">Skype:</h5>
-                            <p class="mb-0">SonrisasOnline</p>
-                        </div>
-                    </li>-->
-
-                </ul>
-
-            </div>
-
-            <div class="col-12 col-lg-6 pt-4 pt-lg-0">
-                <h2 class="font-weight-bold text-center mb-5">Separa una cita:</h2>
-                <form action="#" id="mi-formulario">
-
-                    <!-- Campo #nombre -->
-                    <div class="form-group form-row">
-                        <label for="nombre" class="col-form-label col-12 col-md-3">Nombre:</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" name="nombre" id="nombre"
-                                placeholder="Ingrese su nombre" data-parsley-required
-                                data-parsley-required-message="Este campo no puede estar vacio.">
-                        </div>
-                    </div>
-
-                    <!-- Campo #email -->
-                    <div class="form-group form-row">
-                        <label for="email" class="col-form-label col-12 col-md-3">Email:</label>
-                        <div class="col-12 col-md-9">
-                            <input type="email" class="form-control" name="email" id="email"
-                                placeholder="Ingrese su email" data-parsley-required data-parsley-type="email"
-                                data-parsley-required-message="Este campo no puede estar vacio."
-                                data-parsley-type-message="Ingrese un email en un formato válido.">
-                        </div>
-                    </div>
-
-                    <!-- Campo #celular -->
-                    <div class="form-group form-row">
-                        <label for="celular" class="col-form-label col-12 col-md-3">Celular:</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" name="celular" id="celular"
-                                placeholder="Ingrese su celular" data-parsley-required data-parsley-length="[5, 20]"
-                                data-parsley-required-message="Este campo no puede estar vacio."
-                                data-parsley-length-message="El número telefónico debe tener entre 5 a 20 letras.">
-                        </div>
-                    </div>
-
-                    <!-- Campo #mensaje -->
-                    <div class="form-group form-row">
-                        <label for="mensage" class="col-form-label col-12 col-md-3">Mensage:</label>
-                        <div class="col-12 col-md-9">
-                            <textarea name="mensage" id="mensage" rows="4" class="form-control"
-                                placeholder="Ingrese su mensage." data-parsley-required
-                                data-parsley-required-message="Este campo no puede estar vacio."></textarea>
-                        </div>
-                    </div>
-
-                    <!-- Campo #fecha-cita -->
-                    <div class="form-group form-row">
-                        <label for="fecha-cita" class="col-form-label col-12 col-md-3">Fecha:</label>
-                        <div class="col-12 col-md-9">
-
-                            <div class="input-group">
-                                <input type="date" id="fecha-cita" name="fecha-cita" class="form-control datepicker"
-                                    data-parsley-required
-                                    data-parsley-required-message="Este campo no puede estar vacio."
-                                    data-parsley-errors-container=".error-fecha-cita">
-
-                                <label class="input-group-append input-group-cita" for="fecha-cita">
-                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                                </label>
-                            </div>
-                            <div class="error-fecha-cita">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Campo #dia-cita -->
-                    <div class="form-group form-row">
-                        <label for="dia-cita" class="col-form-label col-12 col-md-3">Día:</label>
-                        <div class="col-12 col-md-9">
-
-                            <div class="input-group">
-                                <input type="text" id="dia-cita" name="dia-cita" class="form-control timepicker"
-                                    data-parsley-required
-                                    data-parsley-required-message="Este campo no puede estar vacio."
-                                    data-parsley-errors-container=".error-hora-cita">
-                                <label class="input-group-append input-group-cita" for="dia-cita">
-                                    <span class="input-group-text"><i class="far fa-clock"></i></span>
-                                </label>
-                            </div>
-                            <div class="error-hora-cita"></div>
-                        </div>
-                    </div>
-
-
-                    <!-- Campo Enviar -->
-                    <div class="form-group form-row">
-                        <div class="col-12 col-md-9 offset-md-3">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar</button>
-
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección #pie-de-pagina -->
-
-<footer id="pie-de-pagina" class="bg-dark  text-light text-truncate">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="columna-inclinada col-12 col-md-6 col-xl-5 py-2">
-                <div class="row">
-
-                    <div class="col-12">
-                        <h2 class="text-white font-weight-bold h1">Soporte</h2>
-                    </div>
-
-                    <div class="col-auto text-black-50 ">
-                        <i class="fas fa-briefcase-medical fa-4x"></i>
-                    </div>
-
-                    <div class="col-auto  text-black-50 pl-0">
-                        <h3>(511) 388-7813</h3>
-                        <p>Servicio de ayuda esta disponible 24h/7.</p>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-12 col-md-6 col-xl-7 py-2 text-center text-md-right small">
-                <ul class="enlaces-secundario list-unstyled d-inline-flex text-uppercase ">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Políticas de Privacidad</a></li>
-                </ul>
-                <p>©2021. Todos los derechos reservados.</p>
-            </div>
-
-        </div>
     </div>
 
-</footer>
+  </footer>
 
   <!-- Carga de "Jquery" -->
   <script src="/assets/js/jquery-3.3.1.min.js"></script>
@@ -361,13 +171,13 @@
   <script src="/assets/js/jquery.counterup.min.js"></script>
 
   <!-- Carga de "Picker.js" | Crea el selector de fecha y de hora-->
-  <script src="/assets/js/pickadate.js/picker.js"></script>
+  <script src="/assets/pickadate.js/picker.js"></script>
 
   <!-- Carga de "picker.date.js" | Crea el selector de fecha-->
-  <script src="/assets/js/pickadate.js/picker.date.js"></script>
+  <script src="/assets/pickadate.js/picker.date.js"></script>
 
   <!-- Carga de "picker.time.js" | Crea el selector de fecha-->
-  <script src="/assets/js/pickadate.js/picker.time.js"></script>
+  <script src="/assets/pickadate.js/picker.time.js"></script>
 
   <!-- Carga de "parsley.js" | Crea la validación de formularios-->
   <script src="/assets/js/parsley.min.js"></script>
@@ -376,17 +186,17 @@
   <!-- Carga de "Jquery Stickit.js" | Crean un encabezado fijo en la parte superior de la página-->
   <script src="/assets/js/jquery.stickit.min.js"></script>
 
-
   <!-- Carga de "page-scroll-to-id" | Crean el efecto de scroll entre los enlaces-->
   <script src="/assets/js/jquery.malihu.PageScroll2id.min.js"></script>
 
- <!-- Carga de "css_browser_selector" | Crean clases para identificar un disp.-->
- <script src="/assets/js/css_browser_selector.js"></script>
+  <!-- Carga de "css_browser_selector" | Crean clases para identificar un disp.-->
+  <script src="/assets/js/css_browser_selector.js"></script>
 
-
-
+  <!-- Máscara para tarjetas de crédito -->
+  <script src="/assets/js/numbermask.js"></script>
 
   <!-- Archivo para configurar e iniciar las funciones de los scripts -->
   <script src="/assets/js/mis-scripts.js"></script>
 </body>
+
 </html>
