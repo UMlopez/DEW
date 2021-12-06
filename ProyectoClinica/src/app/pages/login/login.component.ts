@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     this.userService.login(dataLogin).subscribe((rest: any) => {
       if (rest.isSuccess) {
         sessionStorage.setItem('token', rest.data.token);
-        sessionStorage.setItem('user', rest.data.nombres + ' ' + rest.data.apellidoPaterno);
+        sessionStorage.setItem('user', rest.data.nombres + ' ' + rest.data.apellidopaterno);
         sessionStorage.setItem('perfil', rest.data.idPerfil);
         sessionStorage.setItem('idUsuario', rest.data.idUsuario);
         console.log(rest.data);

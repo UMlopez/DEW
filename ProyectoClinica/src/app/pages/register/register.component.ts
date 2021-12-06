@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
 
     this.userService.register(data).subscribe((rest: any) => {
       if(rest.isSuccess) {
-        alert("Usuario creado con ID: " + rest.data.idUsuario + " y Nombre: " + rest.data.nonombre );
+        alert("Usuario creado con ID: " + rest.data.idUsuario + " y Nombre: " + rest.data.nombres );
         this.router.navigate(['/login']);
       } else {
         alert(rest.errorMessage);
