@@ -85,9 +85,147 @@
           </a>
         </div>
 
+<<<<<<< HEAD
         <div class="col-auto ml-md-auto">
           <i class="fas fa-phone fa-flip-horizontal fa-2x align-middle text-primary"></i>
           <span class="font-weight-bold h5 ml-2">(511)6105050</span>
+=======
+           
+            <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                <h2 class="font-weight-bold text-center mb-5">Separa una cita:</h2>
+                <form action="#" id="mi-formulario">
+
+                    <!-- Campo #nombre -->
+                    <div class="form-group form-row">
+                        <label for="nombre" class="col-form-label col-12 col-md-3">Nombre:</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" name="nombre" id="nombre"
+                                placeholder="Ingrese su nombre" data-parsley-required
+                                data-parsley-required-message="Este campo no puede estar vacio.">
+                        </div>
+                    </div>
+
+                    <!-- Campo #email -->
+                    <div class="form-group form-row">
+                        <label for="email" class="col-form-label col-12 col-md-3">Email:</label>
+                        <div class="col-12 col-md-9">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Ingrese su email" data-parsley-required data-parsley-type="email"
+                                data-parsley-required-message="Este campo no puede estar vacio."
+                                data-parsley-type-message="Ingrese un email en un formato válido.">
+                        </div>
+                    </div>
+
+                    <!-- Campo #celular -->
+                    <div class="form-group form-row">
+                        <label for="celular" class="col-form-label col-12 col-md-3">Celular:</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" name="celular" id="celular"
+                                placeholder="Ingrese su celular" data-parsley-required data-parsley-length="[5, 20]"
+                                data-parsley-required-message="Este campo no puede estar vacio."
+                                data-parsley-length-message="El número telefónico debe tener entre 5 a 20 letras.">
+                        </div>
+                    </div>
+
+                    <!-- Campo #mensaje -->
+                    <div class="form-group form-row">
+                        <label for="mensage" class="col-form-label col-12 col-md-3">Mensage:</label>
+                        <div class="col-12 col-md-9">
+                            <textarea name="mensage" id="mensage" rows="4" class="form-control"
+                                placeholder="Ingrese su mensage." data-parsley-required
+                                data-parsley-required-message="Este campo no puede estar vacio."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Campo #fecha-cita -->
+                    <div class="form-group form-row">
+                        <label for="fecha-cita" class="col-form-label col-12 col-md-3">Fecha:</label>
+                        <div class="col-12 col-md-9">
+
+                            <div class="input-group">
+                                <input type="date" id="fecha-cita" name="fecha-cita" class="form-control datepicker"
+                                    data-parsley-required
+                                    data-parsley-required-message="Este campo no puede estar vacio."
+                                    data-parsley-errors-container=".error-fecha-cita">
+
+                                <label class="input-group-append input-group-cita" for="fecha-cita">
+                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                </label>
+                            </div>
+                            <div class="error-fecha-cita">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campo #dia-cita -->
+                    <div class="form-group form-row">
+                        <label for="dia-cita" class="col-form-label col-12 col-md-3">Día:</label>
+                        <div class="col-12 col-md-9">
+
+                            <div class="input-group">
+                                <input type="text" id="dia-cita" name="dia-cita" class="form-control timepicker"
+                                    data-parsley-required
+                                    data-parsley-required-message="Este campo no puede estar vacio."
+                                    data-parsley-errors-container=".error-hora-cita">
+                                <label class="input-group-append input-group-cita" for="dia-cita">
+                                    <span class="input-group-text"><i class="far fa-clock"></i></span>
+                                </label>
+                            </div>
+                            <div class="error-hora-cita"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Campo Enviar -->
+                    <div class="form-group form-row">
+                        <div class="col-12 col-md-9 offset-md-3">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <h2 class="font-weight-bold text-center mb-2">LOGIN</h2> -->
+                <h2>LOGIN</h2>
+                <div class="form-group text-left">
+                    <label for="nombre">Ingrese su usuario:</label>
+
+                    <input type="text" class="form-control " name="nombre" id="nombre" placeholder=""
+                        aria-describedby="ayuda-nombre">
+                    <!--<small id="ayuda-nombre" class="form-text text-muted">Ingrese su USUARIO</small>-->
+                </div>
+                <div class="form-group text-left">
+                    <label for="nombre">Ingrese su contraseña:</label>
+
+                    <input type="password" class="form-control " name="nombre" id="nombre" placeholder=""
+                        aria-describedby="ayuda-nombre">
+                    <!--<small id="ayuda-nombre" class="form-text text-muted">Ingrese su CONTRASEÑA</small>-->
+                     
+
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <re-captcha
+                        (resolved)="resolved($event)"
+                        (error)="onError($event)"
+                        errorMode="handled"
+                        siteKey="6LeojWMdAAAAAKPzoMpfd5kbC4Rwisc-mc0cCLms"
+                        > 
+                        </re-captcha>
+                    </div>  
+                </div>
+                <p><a href="#">Nuevo usuario</a></p>
+                <p><a href="#">¿Olvideo la contraseña?</a></p>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                </div>
+
+            </div>
+
+>>>>>>> e5993bd4f163759a21244c8fdf1241eeece1539e
         </div>
         <div class="col-auto">
           <i class="fas fa-envelope fa-2x align-middle text-primary"></i>
