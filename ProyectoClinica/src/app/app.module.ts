@@ -16,6 +16,9 @@ import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { HttpClientModule } from '@angular/common/http';
 import { LogoutComponent } from './pages/login/logout.component';
 import { ModalPagoComponent } from './pages/modal-pago/modal-pago.component';
+import { ClinicaComponent } from './pages/clinica/clinica.component';
+import { StaffComponent } from './pages/staff/staff.component';
+import { EspecialidadesComponent } from './pages/especialidades/especialidades.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { ModalPagoComponent } from './pages/modal-pago/modal-pago.component';
     ForgotPasswordComponent,
     ProgramarComponent,
     MisCitasComponent,
-    ModalPagoComponent
+    ModalPagoComponent,
+    ClinicaComponent,
+    StaffComponent,
+    EspecialidadesComponent
   ],
   imports: [
     BrowserModule,
